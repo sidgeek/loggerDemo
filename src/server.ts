@@ -12,7 +12,7 @@ app.use(async (ctx) => {
   console.log(1);
 //   myLogger.info(`This is my log message 1`);
 //   myLogger2.info(`This is my log message 2`);
-  myLogger3.info(`This is my log message 3`);
+  myLogger3.info(`This is my log message 3 ${(new Error().stack)}`);
   myLogger3.error(`This is my log message 4`);
 //   myLogger3.debug(`This is my log message 3 3`);
   console.log(2);
